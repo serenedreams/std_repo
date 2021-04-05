@@ -1,0 +1,29 @@
+cargo-features = ["resolver"]
+
+[workspace]
+members = [
+    'node',
+    'pallets/*',
+    'runtime',
+	"orml/auction",
+	"orml/authority",
+	"orml/benchmarking",
+	"orml/currencies",
+	"orml/gradually-update",
+	"orml/nft",
+	"orml/oracle",
+	"orml/rewards",
+	"orml/tokens",
+	"orml/traits",
+	"orml/utilities",
+	"orml/vesting",
+	"orml/xtokens",
+	"orml/xcm-support",
+	"orml/unknown-tokens",
+
+]
+
+resolver="2"
+
+[profile.release]
+panic = 'unwind'
